@@ -17,6 +17,7 @@ class AvaterUpdateView(generics.UpdateAPIView):
         profile_object = self.request.user.profile
         return profile_object
 
+
 class ProfileViewSet(mixins.UpdateModelMixin,
                      mixins.ListModelMixin,
                      mixins.RetrieveModelMixin,
